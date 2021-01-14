@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><ion-icon name="person" item-left></ion-icon> /Salut</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <h2>Benvingut al seguiment de les teves patologies</h2>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="calendar" item-left></ion-icon>
+      <h3><b>Avui</b></h3>
+      <h4>Pendent de realitzar</h4>
+    </ion-item>
+    <ion-item>
+      <p>8:00 am</p> 
+      <p>Depakine 500MG 20 comprimits gastroresistents VYTORIN 10/20MG 28 comprimits</p>
+    </ion-item>
+    <ion-item>
+      <p>9:00 am</p> 
+      <p>Seguiment Cirurgia Major Ambulatòria Varius</p>
+    </ion-item>
+  </ion-list>
+  <h5><b>Seguiments Actius</b></h5>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <!--button ion-button size="large" color="primary" (click)="seguimentA()">CMAVarius</button-->
+            <button ion-button size="large" color="primary" [routerLink]="['actius']">CMAVarius</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button size="large" color="primary">Diabetis</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button size="large" color="primary">Medicació</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+  <h5><b>Seguiments Finalitzats</b></h5>
+      <ion-grid>
+        <ion-row>
+          
+          <ion-col size="6">
+            <button ion-button size="large" color="light">TBipolar</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>
