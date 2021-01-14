@@ -1,5 +1,7 @@
 {
   "name": "mConnectaApp",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
