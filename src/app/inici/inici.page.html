@@ -14,35 +14,27 @@
             <h6>Pendent de realitzar</h6>
     </ion-item>
     <ion-item>
-      <p>8:00 am  </p> 
-      <p>  Depakine 500MG 20 comprimits gastroresistents VYTORIN 10/20MG 28 comprimits</p>
+      <p>8:00 am<br>Depakine 500MG 20 comprimits gastroresistents VYTORIN 10/20MG 28 comprimits</p>
     </ion-item>
     <ion-item>
-      <p>9:00 am  </p> 
-      <p>  Seguiment Cirurgia Major Ambulatòria Varius</p>
+      <p>9:00 am <br>Seguiment Cirurgia Major Ambulatòria Varius</p>
     </ion-item>
   </ion-list>
-  <h5><b>Seguiments Actius</b></h5>
+  <h5><br><b>Seguiments Actius</b></h5>
       <ion-grid>
         <ion-row>
-          <ion-col size="6">
+          <ion-col>
             <!--ion-button size="large" color="primary" (click)="seguimentA()">CMAVarius</ion-button-->
-            <ion-button color="success" [routerLink]="['actius']">CMAVarius</ion-button>
+            <ion-button color="success" [routerLink]="['cmavarius']">CMAVarius</ion-button>
           </ion-col>
           <ion-col>
-            <ion-button color="primary">Diabetis</ion-button>
+            <ion-button color="primary" (click)="obreAppLMS()">Diabetis</ion-button>
           </ion-col>
           <ion-col>
-            <ion-button color="secondary">Medicació</ion-button>
+            <ion-button color="secondary" (click)="obreAppMedicacio()">Medicació</ion-button>
           </ion-col>
-        </ion-row>
-      </ion-grid>
-
-  <h5><b>Seguiments Finalitzats</b></h5>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="6">
-            <ion-button size="large" color="light">TBipolar</ion-button>
+          <ion-col>
+            <ion-button color="medium" [routerLink]="['tabs/actius']">TBipolar</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
